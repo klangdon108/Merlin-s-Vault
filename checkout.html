@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/checkout.js"></script>
+</head>
+<body data-page="shop">
+  <div data-header></div>
+  <main>
+    
+<section class="page-banner shell">
+  <img src="https://loremflickr.com/1400/700/shopping,tabletop-game?lock=4006" alt="Game shop checkout order">
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading split-heading">
+      <div>
+        <span class="eyebrow">Checkout</span>
+        <h1>Complete your simulated order</h1>
+      </div>
+      <p>This validates shipping and payment fields, creates an order number, and stores the order locally without charging anything.</p>
+    </div>
+    <div class="checkout-grid">
+      <form class="form-card" id="checkout-form">
+        <div class="form-section">
+          <h2>Contact</h2>
+          <div class="content-grid two-column">
+            <label><span class="field-label">Full Name</span><input class="field-input" name="fullName" required></label>
+            <label><span class="field-label">Email</span><input class="field-input" name="email" type="email" required></label>
+            <label><span class="field-label">Phone</span><input class="field-input" name="phone" type="tel" required></label>
+            <label><span class="field-label">Pickup or Shipping</span>
+              <select class="field-input" name="fulfillment">
+                <option>In-Store Pickup</option>
+                <option>Standard Shipping</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Shipping Address</h2>
+          <div class="content-grid two-column">
+            <label><span class="field-label">Street Address</span><input class="field-input" name="address" required></label>
+            <label><span class="field-label">City</span><input class="field-input" name="city" required></label>
+            <label><span class="field-label">State</span><input class="field-input" name="state" required></label>
+            <label><span class="field-label">ZIP Code</span><input class="field-input" name="zip" required></label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Payment (Simulated)</h2>
+          <div class="content-grid two-column">
+            <label><span class="field-label">Name on Card</span><input class="field-input" name="cardName" required></label>
+            <label><span class="field-label">Card Number</span><input class="field-input" name="cardNumber" inputmode="numeric" maxlength="16" placeholder="1234123412341234" required></label>
+            <label><span class="field-label">Expiry</span><input class="field-input" name="expiry" placeholder="MM/YY" required></label>
+            <label><span class="field-label">CVV</span><input class="field-input" name="cvv" inputmode="numeric" maxlength="4" required></label>
+          </div>
+        </div>
+
+        <button class="button button-primary" type="submit">Place Prototype Order</button>
+      </form>
+
+      <aside id="checkout-summary"></aside>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>

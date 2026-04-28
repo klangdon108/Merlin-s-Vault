@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="70%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="rgba(0,0,0,0.35)"/></filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <circle cx="702.0" cy="162.0" r="252.00000000000003" fill="url(#orb)"/>
+  <path d="M 0 738.0 C 180.0 630.0, 315.0 882.0, 522.0 774.0 S 828.0 648.0, 900 810.0 L 900 900 L 0 900 Z" fill="rgba(0,0,0,0.18)"/>
+  <rect x="54.0" y="90.0" width="792.0" height="720.0" rx="24" fill="rgba(8,12,24,0.22)" stroke="rgba(255,255,255,0.22)" />
+  <text x="72.0" y="288.0" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="99" font-weight="700">Vaultkeeper Zip Jacket</text>
+  <text x="72.0" y="396.0" fill="rgba(255,255,255,0.85)" font-family="Segoe UI, Arial, sans-serif" font-size="40">Apparel / Merch</text>
+  <text x="72.0" y="774.0" fill="rgba(255,255,255,0.65)" font-family="Segoe UI, Arial, sans-serif" font-size="34">Preorder</text>
+</svg>

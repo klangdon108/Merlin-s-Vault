@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Detail | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/event.js"></script>
+</head>
+<body data-page="events">
+  <div data-header></div>
+  <main>
+    
+<section class="section">
+  <div class="shell">
+    <div class="content-grid event-layout">
+      <article class="event-hero-card">
+        <img id="event-image" src="" alt="">
+      </article>
+      <article class="event-copy">
+        <span class="eyebrow">Event detail</span>
+        <h1 id="event-title"></h1>
+        <p id="event-summary"></p>
+        <ul class="inline-meta">
+          <li id="event-date"></li>
+          <li id="event-location"></li>
+          <li id="event-fee"></li>
+          <li id="event-spots"></li>
+        </ul>
+
+        <div class="content-grid two-column">
+          <div>
+            <h2>What to bring</h2>
+            <ul class="feature-list" id="event-bring"></ul>
+          </div>
+          <div>
+            <h2>Schedule</h2>
+            <ul class="feature-list" id="event-schedule"></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="register">
+  <div class="shell narrow-shell">
+    <div class="section-heading">
+      <span class="eyebrow">Event registration</span>
+      <h2>Save your spot</h2>
+      <p>Registrations are saved to local storage in this prototype.</p>
+    </div>
+
+    <form class="form-card" id="event-registration-form">
+      <div class="content-grid two-column">
+        <label><span class="field-label">Name</span><input class="field-input" name="name" required></label>
+        <label><span class="field-label">Email</span><input class="field-input" name="email" type="email" required></label>
+        <label><span class="field-label">Party Size</span><input class="field-input" name="partySize" type="number" min="1" value="1"></label>
+        <label><span class="field-label">Experience Level</span>
+          <select class="field-input" name="experience">
+            <option>First Time</option>
+            <option>Casual Player</option>
+            <option>Regular</option>
+          </select>
+        </label>
+      </div>
+      <label><span class="field-label">Notes</span><textarea class="field-input field-textarea" name="notes" placeholder="Accessibility needs, deck power level, campaign notes, etc."></textarea></label>
+      <button class="button button-primary" type="submit">Register</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#09090F"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="70%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="rgba(0,0,0,0.35)"/></filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <circle cx="1248.0" cy="126.0" r="196.00000000000003" fill="url(#orb)"/>
+  <path d="M 0 574.0 C 320.0 489.99999999999994, 560.0 686.0, 927.9999999999999 602.0 S 1472.0 504.0, 1600 630.0 L 1600 700 L 0 700 Z" fill="rgba(0,0,0,0.18)"/>
+  <rect x="96.0" y="70.0" width="1408.0" height="560.0" rx="24" fill="rgba(8,12,24,0.22)" stroke="rgba(255,255,255,0.22)" />
+  <text x="128.0" y="224.0" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="77" font-weight="700">Enter Merlin's Vault</text>
+  <text x="128.0" y="308.0" fill="rgba(255,255,255,0.85)" font-family="Segoe UI, Arial, sans-serif" font-size="32">Fantasy-inspired storefront prototype</text>
+  <text x="128.0" y="602.0" fill="rgba(255,255,255,0.65)" font-family="Segoe UI, Arial, sans-serif" font-size="27">Home hero banner</text>
+</svg>

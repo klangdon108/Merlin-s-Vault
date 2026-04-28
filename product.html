@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/product.js"></script>
+</head>
+<body data-page="shop">
+  <div data-header></div>
+  <main>
+    
+<section class="section">
+  <div class="shell product-layout">
+    <article class="product-hero-card">
+      <img id="product-image" src="" alt="">
+    </article>
+
+    <article class="product-copy">
+      <span class="eyebrow" id="product-category"></span>
+      <h1 id="product-title"></h1>
+      <div class="inline-meta product-meta">
+        <span class="price-lockup" id="product-price"></span>
+        <span class="status-pill" id="product-badge"></span>
+        <span class="status-pill" id="product-stock"></span>
+      </div>
+      <p id="product-description"></p>
+
+      <div class="content-grid two-column">
+        <div>
+          <h2>Why it works</h2>
+          <ul class="feature-list" id="product-features"></ul>
+        </div>
+        <div>
+          <h2>Details</h2>
+          <ul class="feature-list" id="product-details-list"></ul>
+        </div>
+      </div>
+
+      <div class="purchase-row">
+        <label>
+          <span class="field-label">Quantity</span>
+          <input class="field-input quantity-input" id="product-quantity" type="number" min="1" value="1">
+        </label>
+        <button class="button button-primary" id="product-add" type="button">Add to Cart</button>
+        <a class="button button-secondary" href="cart.html">View Cart</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="shell">
+    <div class="section-heading">
+      <span class="eyebrow">Related picks</span>
+      <h2>More from this shelf</h2>
+    </div>
+    <div class="card-grid four-up" id="related-products"></div>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>

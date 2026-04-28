@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/shop.js"></script>
+</head>
+<body data-page="shop">
+  <div data-header></div>
+  <main>
+    
+<section class="page-banner shell">
+  <img src="https://loremflickr.com/1400/700/tabletop,game,store?lock=4002" alt="Tabletop game shop display">
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading split-heading">
+      <div>
+        <span class="eyebrow">Shop all</span>
+        <h1>Browse every category</h1>
+      </div>
+      <p>Search the stacked inventory, filter by category, and move from browsing to a full simulated checkout flow.</p>
+    </div>
+
+    <div class="filter-bar">
+      <label>
+        <span class="field-label">Search</span>
+        <input class="field-input" id="shop-search" type="search" placeholder="Search products">
+      </label>
+      <label>
+        <span class="field-label">Category</span>
+        <select class="field-input" id="shop-category"></select>
+      </label>
+      <label>
+        <span class="field-label">Sort by</span>
+        <select class="field-input" id="shop-sort">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="section-heading compact-heading">
+      <h2>Product catalog</h2>
+      <span class="count-pill" id="shop-count"></span>
+    </div>
+
+    <div class="card-grid three-up" id="shop-grid"></div>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>

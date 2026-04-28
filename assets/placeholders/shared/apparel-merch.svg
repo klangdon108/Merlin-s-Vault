@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="70%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="rgba(0,0,0,0.35)"/></filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <circle cx="780.0" cy="126.0" r="196.00000000000003" fill="url(#orb)"/>
+  <path d="M 0 574.0 C 200.0 489.99999999999994, 350.0 686.0, 580.0 602.0 S 920.0 504.0, 1000 630.0 L 1000 700 L 0 700 Z" fill="rgba(0,0,0,0.18)"/>
+  <rect x="60.0" y="70.0" width="880.0" height="560.0" rx="24" fill="rgba(8,12,24,0.22)" stroke="rgba(255,255,255,0.22)" />
+  <text x="80.0" y="224.0" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="77" font-weight="700">Apparel / Merch</text>
+  <text x="80.0" y="308.0" fill="rgba(255,255,255,0.85)" font-family="Segoe UI, Arial, sans-serif" font-size="32">Wearable merch, mugs, posters, and vault-inspired shop gear.</text>
+  <text x="80.0" y="602.0" fill="rgba(255,255,255,0.65)" font-family="Segoe UI, Arial, sans-serif" font-size="27">Category spotlight</text>
+</svg>

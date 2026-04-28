@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Status | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/order-status.js"></script>
+</head>
+<body data-page="order-status">
+  <div data-header></div>
+  <main>
+    
+<section class="section">
+  <div class="shell">
+    <div class="section-heading split-heading">
+      <div>
+        <span class="eyebrow">Customer self-service</span>
+        <h1>Track an order</h1>
+      </div>
+      <p>Enter the confirmation number created at checkout to view the stored order timeline and totals.</p>
+    </div>
+
+    <form class="lookup-card" id="order-status-form">
+      <label class="lookup-grow">
+        <span class="field-label">Order Number</span>
+        <input class="field-input" id="order-number" placeholder="MV-XXXX-XXX">
+      </label>
+      <button class="button button-primary" type="submit">Check Status</button>
+    </form>
+
+    <div class="content-grid two-column" id="order-status-result"></div>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>

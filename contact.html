@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Merlin's Vault</title>
+  <meta name="description" content="Merlin's Vault front-end e-commerce prototype built with HTML5, CSS, and JavaScript.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/contact.js"></script>
+</head>
+<body data-page="contact">
+  <div data-header></div>
+  <main>
+    
+<section class="page-banner shell">
+  <img src="https://loremflickr.com/1400/700/game-store,counter?lock=4005" alt="Game store counter">
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="content-grid two-column">
+      <article class="summary-card">
+        <span class="eyebrow">Store info</span>
+        <h1>Contact the vault</h1>
+        <p>124 Arcane Alley, Mythic Plaza, Demo City</p>
+        <p>(555) 014-VAULT<br>hello@merlinsvault.demo</p>
+        <ul class="feature-list">
+          <li>Mon–Thu: 12 PM – 9 PM</li>
+          <li>Fri: 12 PM – 11 PM</li>
+          <li>Sat: 10 AM – 11 PM</li>
+          <li>Sun: 11 AM – 7 PM</li>
+        </ul>
+      </article>
+      <form class="form-card" id="contact-form">
+        <h2>Send a message</h2>
+        <label><span class="field-label">Name</span><input class="field-input" name="name" required></label>
+        <label><span class="field-label">Email</span><input class="field-input" name="email" type="email" required></label>
+        <label><span class="field-label">Topic</span><input class="field-input" name="topic" placeholder="Orders, events, products, etc."></label>
+        <label><span class="field-label">Message</span><textarea class="field-input field-textarea" name="message" required></textarea></label>
+        <button class="button button-primary" type="submit">Save Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <div data-footer></div>
+</body>
+</html>
